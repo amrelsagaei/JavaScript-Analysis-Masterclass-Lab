@@ -1,5 +1,5 @@
 /**
- * AmrSec JavaScript Analysis Lab
+ * AmrSec JavaScript Analysis Masterclass Lab
  * Features JavaScript
  * 
  * This file contains obfuscated code and other features
