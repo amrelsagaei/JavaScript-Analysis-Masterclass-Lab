@@ -1,5 +1,5 @@
 /**
- * AmrSec JavaScript Analysis Lab
+ * AmrSec JavaScript Analysis Masterclass Lab
  * Core JavaScript Functionality
  * 
  * This is the main JS file that contains core functionality
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     checkUserStatus();
     
     // Log a hidden message that can be found in browser console
-    console.log("%cAmrSec Lab Initialized", "color: red; font-size: 16px; font-weight: bold;");
+    console.log("%cAmrSec JS Lab Initialized", "color: red; font-size: 16px; font-weight: bold;");
     console.log("%cTry using toggleDevMode() in the console", "color: #ff5757; font-size: 12px;");
 });
 
