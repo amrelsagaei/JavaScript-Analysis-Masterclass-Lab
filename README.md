@@ -55,10 +55,6 @@ That's it! The lab runs entirely in your browser with no need for a web server.
 - Local Storage Manipulation
 - Hidden Feature Discovery
 
-## Educational Resources
-
-For a deeper dive into JavaScript security analysis, check out the following:
-
 ## Security Notice
 
 This lab is designed for educational purposes only. The vulnerabilities demonstrated are intentional and should not be replicated in production environments. Always practice responsible security testing.
