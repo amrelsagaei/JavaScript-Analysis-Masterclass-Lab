@@ -1,5 +1,5 @@
 /**
- * AmrSec JavaScript Analysis Lab
+ * AmrSec JavaScript Analysis Masterclass Lab
  * Security JavaScript
  * 
  * This file contains authentication, permissions, and other security features
