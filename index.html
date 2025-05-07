@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmrSec JS Analysis Lab</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/core.js" defer></script>
+    <script src="./assets/js/features.js" defer></script>
+    <script src="./assets/js/security.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AmrSec<span class="accent">Lab</span></h1>
+        </div>
+        <div class="youtube">
+            <a href="https://youtube.com/@AmrSecOfficial" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                </svg>
+                YouTube Channel
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>JavaScript Analysis Lab</h2>
+            <p>Welcome to the interactive lab for testing JavaScript analysis techniques. This environment demonstrates various vulnerabilities and analysis methods mentioned in the <a href="https://youtube.com/@AmrSecOfficial" target="_blank">AmrSec JavaScript Analysis Masterclass</a>.</p>
+            <div class="status">
+                <span id="user-status">Current Role: <b>User</b></span>
+                <span class="separator">|</span>
+                <span id="version">Version: <b>1.0</b></span>
+            </div>
+        </section>
+
+        <div class="lab-grid">
+            <!-- Breakpoints & Debug Section -->
+            <section class="lab-card">
+                <h3>Live Debugging with Breakpoints</h3>
+                <p>Try using breakpoints to intercept authentication checks</p>
+                <div class="content">
+                    <div class="form-control">
+                        <label for="admin-password">Admin Password:</label>
+                        <input type="password" id="admin-password" placeholder="Enter admin password">
+                        <button id="admin-login-btn">Verify</button>
+                    </div>
+                    <div class="hint">
+                        <p class="hint-text">Set a breakpoint at the validateAdminPassword function to bypass this check.</p>
+                    </div>
+                    <div id="admin-result" class="result"></div>
+                </div>
+            </section>
+
+            <!-- Local Overrides Section -->
+            <section class="lab-card">
+                <h3>Local Overrides</h3>
+                <p>Use Chrome's local overrides to modify core functionality</p>
+                <div class="content">
+                    <div class="premium-content">
+                        <h4>Premium Content</h4>
+                        <div id="premium-placeholder">
+                            <p>This content requires a premium subscription</p>
+                            <button id="check-premium-btn">Check Access</button>
+                        </div>
+                        <div id="premium-content" style="display: none;">
+                            <div class="secret-data">
+                                <h5>Internal API Endpoints</h5>
+                                <code>/api/v1/internal/users/export</code><br>
+                                <code>/api/v1/admin/metrics</code><br>
+                                <code>/api/v1/system/config</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hint">
+                        <p class="hint-text">Use Local Overrides to modify the isPremiumUser function to return true.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Send-a-Message Exploitation -->
+            <section class="lab-card">
+                <h3>Send-a-Message Exploitation</h3>
+                <p>Modify message parameters using breakpoints</p>
+                <div class="content">
+                    <div class="form-control">
+                        <label for="message-input">Message:</label>
+                        <input type="text" id="message-input" placeholder="Enter your message">
+                        <button id="send-message-btn">Send</button>
+                    </div>
+                    <div class="hint">
+                        <p class="hint-text">Use breakpoints to intercept the sendMessage() function and modify parameters.</p>
+                    </div>
+                    <div id="message-display" class="message-display">
+                        <div class="message-container">
+                            <h4>Messages</h4>
+                            <div id="messages-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hidden Features & Endpoints -->
+            <section class="lab-card">
+                <h3>Hidden Features</h3>
+                <p>Discover hidden endpoints and features</p>
+                <div class="content">
+                    <div class="form-control">
+                        <label for="endpoint-input">Call Endpoint:</label>
+                        <input type="text" id="endpoint-input" placeholder="/api/...">
+                        <button id="call-endpoint-btn">Call</button>
+                    </div>
+                    <div class="hint">
+                        <p class="hint-text">Look for hidden endpoints in the JS files or try activating the _devMode flag.</p>
+                    </div>
+                    <div id="endpoint-result" class="result"></div>
+                </div>
+            </section>
+
+            <!-- Obfuscated Code Analysis -->
+            <section class="lab-card">
+                <h3>Obfuscation Analysis</h3>
+                <p>Analyze and decode obfuscated code</p>
+                <div class="content">
+                    <div class="form-control">
+                        <label for="token-input">Token:</label>
+                        <input type="text" id="token-input" placeholder="Enter token string">
+                        <button id="verify-token-btn">Verify</button>
+                    </div>
+                    <div class="hint">
+                        <p class="hint-text">Use breakpoints to analyze the obfuscated verifyToken function and find the correct value.</p>
+                    </div>
+                    <div id="token-result" class="result"></div>
+                </div>
+            </section>
+
+            <!-- Dev Console Section -->
+            <section class="lab-card">
+                <h3>Developer Console</h3>
+                <p>Built-in console for testing</p>
+                <div class="content">
+                    <div class="console">
+                        <div id="console-output"></div>
+                        <div class="console-input">
+                            <span class="prompt">></span>
+                            <input type="text" id="console-input" placeholder="Type a command...">
+                        </div>
+                    </div>
+                    <div class="hint">
+                        <p class="hint-text">Try commands like 'help', 'showConfig', or 'toggleDevMode'</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>AmrSec JavaScript Analysis Lab | Created for educational purposes</p>
+    </footer>
+
+    <div id="notification" class="notification"></div>
+</body>
+</html>
