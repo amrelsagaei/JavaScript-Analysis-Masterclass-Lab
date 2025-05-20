@@ -11,7 +11,7 @@
 <br>
 <div style="text-align: center;">
     <a href="https://youtu.be/bAHNM8IInwE" target="_blank">
-        <img src="https://blog.amrelsagaei.com/storage/posts/webp/bug-bounty-metho-2025.webp" alt="Bug Bounty Methodology 2025 Edition" style="width: 100%;">
+        <img src="https://blog.amrelsagaei.com/storage/posts/webp/bug-bounty-metho-2025.webp" alt="JavaScript Analysis Masterclass Part 2" style="width: 100%;">
     </a>
 </div>
 
