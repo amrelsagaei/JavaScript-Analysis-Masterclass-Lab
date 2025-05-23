@@ -10,7 +10,7 @@
 </div>
 <br>
 <div style="text-align: center;">
-    <a href="https://youtu.be/bAHNM8IInwE" target="_blank">
+    <a href="https://youtu.be/FpX_4CSDzSM" target="_blank">
         <img src="https://amrelsagaei.com/storage/code/posts/js-analysis-masterclass-pt2.webp" alt="JavaScript Analysis Masterclass Part 2" style="width: 100%;">
     </a>
 </div>
