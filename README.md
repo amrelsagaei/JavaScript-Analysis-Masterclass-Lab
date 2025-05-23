@@ -11,7 +11,7 @@
 <br>
 <div style="text-align: center;">
     <a href="https://youtu.be/bAHNM8IInwE" target="_blank">
-        <img src="https://blog.amrelsagaei.com/storage/posts/webp/bug-bounty-metho-2025.webp" alt="JavaScript Analysis Masterclass Part 2" style="width: 100%;">
+        <img src="https://amrelsagaei.com/storage/code/posts/js-analysis-masterclass-pt2.webp" alt="JavaScript Analysis Masterclass Part 2" style="width: 100%;">
     </a>
 </div>
 
@@ -62,4 +62,4 @@ This lab is designed for educational purposes only. The vulnerabilities demonstr
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
